@@ -41,13 +41,15 @@ nav{
 
 .contenedorFoto{
     display: flex;
+    justify-content: space-between;
    
 }
 
 .textoFoto{
   margin-left: 60px;
-  margin-top: 25px;
+  margin-top: -70px;
   text-shadow: 2px 2px #00000033;
+  
 
 }
 
@@ -68,11 +70,16 @@ nav{
     margin-top: 25px;
     padding-bottom: 50px;
     text-shadow: 2px 2px #00000025;
+    justify-content: space-between;
    
 
 }
 
-.contenedorParrafo h1{
+.informacion{
+    display: flex;
+}
+
+.borde_2  h1{
     font-size: 40px;
     text-decoration: underline;
     text-shadow: 2px 2px #00000030;
@@ -85,12 +92,21 @@ nav{
 }
 
 .borde{
+    padding: 25px;
+    padding-top: 5px;
+    margin: 5px 15px;
+    margin-top: 60px;
+    display: flex;
+    
+}
+
+.borde_2{
     border: 1px solid black;
     padding: 25px;
     padding-top: 5px;
     margin: 5px 15px;
     box-shadow: 10px 5px 5px rgb(90 91 91);
-    margin-top: 60px;
+    display: flex;
     
 }
 
@@ -389,7 +405,7 @@ color: rgb(189, 182, 182)
     
     @media (max-width: 1390px){
         nav ul li a{
-            font-size: 19px;
+            font-size: 17px;
         }
     }
     li a:hover{
@@ -447,5 +463,15 @@ color: rgb(189, 182, 182)
         #check:checked ~ ul{
             left:0;
         }
+
+        .foto{
+            margin: auto; /* para que quede en el medio cuando esta en pantalla celular */
+            
+        }
+
+        .borde{
+            display: block; /* para que no haya overflow */
+        }
+        
 
     }
